@@ -14,6 +14,16 @@
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: "PropisiLight";
+  src: url("../fonts/ofont.ru_Propisi.ttf") format("opentype");
+}
+@font-face {
+  font-family: "PropisiLight2";
+  src: url("../fonts/Propisi_Cyr_Lat_2.ttf") format("opentype");
+}
+
+
 
 @font-face {
   font-family: "NokiaSans";
@@ -60,6 +70,9 @@ body {
 }
 .nav img {
   width: 100%;
+}
+.f-link__menu:first-child {
+  margin-right: -24px;
 }
 .header {
   margin: 0 auto;
@@ -112,6 +125,7 @@ body {
 }
 
 .reading__quote_text {
+  font-family: 'PropisiLight2', sans-serif;
   font-size: 60px;
   padding-top: 93px;
   max-width: 813px;
@@ -127,7 +141,9 @@ body {
   margin: 21px 0;
   width: 100%;
 }
-
+.reading__tablet_mob {
+  display: none;
+}
 .reading__tablet,
 .reading__diary,
 .reading__teacher {
@@ -137,6 +153,7 @@ body {
 }
 .reading__diary {
   padding-bottom: 45px;
+  margin-top: 25px;
 }
 .reading__stages {
   position: relative;
@@ -145,12 +162,10 @@ body {
 .reading__tablet {
   margin-top: 110px;
 }
-.reading__diary {
-  margin-top: 25px;
-}
 .reading__tablet .reading__tablet_icon,
 .reading__diary .reading__diary_icon,
 .reading__stages_icon,
+.reading__diary_icon,
 .reading__partic_icon,
 .reading__partic_img {
   position: absolute;
@@ -200,10 +215,6 @@ body {
 .reading__teacher_block_bottom {
   margin-top: 67px;
 }
-.reading__tablet_icon,
-.reading__diary_icon {
-  position: absolute;
-}
 .reading__tablet_icon4 {
   bottom: 396px;
   left: 48px;
@@ -228,12 +239,41 @@ body {
   right: 127px;
   max-width: 180px;
 }
+.reading__tablet_mob1 {
+  bottom: 432px;
+  right: 0;
+}
+.reading__tablet_mob2 {
+  bottom: 268px;
+  right: 28px;
+}
+.reading__tablet_mob3 {
+  bottom: 128px;
+  right: 0;
+}
+
 .reading__line,
 .reading__line-2 {
   width: 100%;
   position: absolute;
   bottom: 0;
   left: 0;
+}
+.reading__diary_mob {
+  display: none;
+}
+.reading__diary_mob1 {
+  top: 324px;
+  left: 0;
+}
+.reading__diary_mob2 {
+  bottom: 34px;
+  right: 51px;
+}
+.reading__diary_mob3 {
+  max-width: 50px;
+  left: 18px;
+  bottom: 67px;
 }
 
 .reading__diary_icon2-1 {
@@ -748,7 +788,7 @@ body {
 }
 .f-menu {
   display: flex;
-  gap: 25px;
+  gap: 51px;
 }
 .f-link__menu {
   display: flex;
@@ -766,6 +806,9 @@ body {
 }
 
 @media only screen and (max-width: 1850px) {
+  .reading__teacher_box {
+    width: 50%;
+  }
   .reading__partic_icon2 {
     right: 0;
   }
@@ -936,7 +979,167 @@ body {
     max-width: 493px;
     top: 311px;
   }
+}
+@media only screen and (max-width: 768px) {
   .nav {
-    
+    padding: 37px 38px 23px 45px;
+  }
+  .nav_line {
+    height: 12px;
+  }
+  .header_right img {
+    max-width: 145px;
+  }
+  .header_right span {
+    font-size: 22px;
+    max-width: 94px;
+  }
+  .reading__quote {
+    margin-top: 20px;
+  }
+  .reading__quote_icon9 {
+    max-width: 27px;
+  }
+  .reading__quote_text {
+    font-size: 22px;
+    padding-top: 43px;
+    max-width: 318px;
+  }
+  .reading__quote_block {
+    margin-left: 16px;
+    margin-right: -30px;
+  }
+  .reading__quote_icon9 {
+    left: -21px;
+  }
+  .reading__quote_line {
+    margin: 21px 0 7px;
+  }
+  .reading__tablet_icon7 {
+    max-width: 95px;
+    bottom: 17px;
+    right: 0;
+  }
+  .reading__tablet {
+    margin-top: 0;
+  }
+  .reading__tablet_icon4 {
+    bottom: -27px;
+    left: 319px;
+    max-width: 51px;
+  }
+  .reading__quote_icon2 {
+    left: 0;
+    top: 213px;
+    max-width: 49px;
+  }
+  .reading__quote_icon3 {
+    top: 222px;
+    left: 172px;
+    max-width: 51px;
+  }
+  .reading__tablet_icon8 {
+    left: -22px;
+    bottom: 289px;
+    max-width: 66px;
+  }
+  .reading__tablet_icon5 {
+    bottom: 91px;
+    left: 4px;
+    max-width: 34px;
+  }
+
+  .reading__tablet_img {
+    max-width: 626px;
+  }
+
+  .reading__diary_img {
+    max-width: 675px;
+  }
+  .reading__quote_icon1 {
+    display: none;
+  }
+  .reading__tablet_mob {
+    display: block;
+  }
+  .reading__diary {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+  .reading__diary_icon2-7 {
+    max-width: 49px;
+    top: 97px;
+    right: 18px;
+  }
+  .reading__diary_icon2-9 {
+    max-width: 112px;
+    top: 532px;
+    right: 176px;
+  }
+  .reading__diary_icon2-10 {
+    max-width: 128px;
+    top: -7px;
+    left: 34px;
+  }
+  .reading__diary_icon2-11 {
+    bottom: 22px;
+    right: 51px;
+    max-width: 63px;
+  }
+  .reading__diary_icon2-4,
+  .reading__diary_icon2-5 {
+    display: none;
+  }
+  .reading__diary_mob {
+    display: block;
+  }
+  .reading__diary_icon2-11 {
+    display: none;
+  }
+  .reading__teacher_img2 {
+    max-width: 80px;
+  }
+  .reading__teacher_text {
+    font-size: 12px;
+  }
+  .reading__teacher_text-bottom {
+    font-size: 10px;
+  }
+  .reading__teacher_block_img p {
+    font-size: 20px;
+  }
+  .reading__teacher_block_img img {
+    max-width: 61px;
+  }
+  .reading__teacher_block_img p {
+    margin-left: 13px;
+  }
+  .reading__teacher_block_img-2 {
+    margin-left: 29px;
+  }
+  .reading__teacher_block_img-3 {
+    margin-left: 105px;
+  }
+  .reading__teacher_arr-1 {
+    left: 24px;
+  }
+  .reading__teacher_arr {
+    top: 50px;
+  }
+  .reading__diary_icon-pointer {
+    max-width: 376px;
+    top: 193px;
+    right: 47px;
+  }
+  .reading__teacher_text-bottom {
+    margin-top: 24px;
+  }
+  .reading__teacher_icon2-8 {
+    top: 308px;
+    max-width: 107px;
+  }
+
+  .cases__swiper_wrap {
+    max-width: 650px;
   }
 }
