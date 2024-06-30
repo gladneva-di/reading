@@ -1844,7 +1844,7 @@ body {
   }
   .stickers__item7 {
     bottom: 13px;
-    left: 140px;
+    left: 170px;
   }
   .stickers__item8 {
     bottom: 12px;
@@ -2083,7 +2083,7 @@ body {
     position: relative;
   }
 }
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 420px) {
   .reading__tablet_img {
     max-width: 327px;
   }
@@ -2101,8 +2101,11 @@ body {
   }
   .reading__nav {
     gap: 3px;
-}
-
+  }
+  .stickers__item7 {
+    bottom: 13px;
+    left: 140px;
+  }
 }
 @media only screen and (max-width: 350px) {
   .reading__tablet_img {
