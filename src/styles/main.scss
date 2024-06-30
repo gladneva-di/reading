@@ -149,6 +149,7 @@ body {
 .reading__diary,
 .reading__teacher {
   display: flex;
+  align-items: flex-start;
   position: relative;
   padding-bottom: 92px;
 }
@@ -583,6 +584,7 @@ body {
 }
 .stickers__block {
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 .reading__partic_img {
