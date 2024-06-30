@@ -15,10 +15,6 @@
   font-display: swap;
 }
 @font-face {
-  font-family: "PropisiLight";
-  src: url("../fonts/ofont.ru_Propisi.ttf") format("opentype");
-}
-@font-face {
   font-family: "PropisiLight2";
   src: url("../fonts/Propisi_Cyr_Lat_2.ttf") format("opentype");
 }
@@ -133,6 +129,7 @@ body {
   text-align: justify;
 }
 .reading__quote_autor {
+  font-family: "Propisi", sans-serif;
   font-size: 60px;
   font-weight: 600;
   display: flex;
@@ -339,6 +336,7 @@ body {
   align-items: center;
 }
 .reading__teacher_text {
+  font-family: "PropisiLight2", sans-serif;
   font-size: 30px;
   margin-left: 29px;
   text-align: justify;
@@ -357,6 +355,7 @@ body {
   align-items: center;
 }
 .reading__teacher_block_img p {
+  font-family: "PropisiLight2", sans-serif;
   margin-left: 30px;
   font-size: 48px;
   line-height: 87%;
@@ -394,6 +393,7 @@ body {
   flex-direction: column;
 }
 .reading__stage_top-autor {
+  font-family: "PropisiLight2", sans-serif;
   font-size: 48px;
   align-self: flex-end;
   max-width: 365px;
@@ -422,6 +422,9 @@ body {
 }
 .reading__stage_info {
   position: relative;
+}
+.reading__stage_info h3, .reading__stage_info p {
+  font-family: "PropisiLight2", sans-serif;
 }
 .reading__stage_info-1 .reading__stage_top-icon {
   margin-bottom: 34px;
@@ -460,10 +463,12 @@ body {
   max-width: 494px;
 }
 .reading__stage_top-title {
+  font-family: "PropisiLight2", sans-serif;
   font-size: 100px;
   text-align: center;
 }
 .reading__stage_top-desc {
+  font-family: "PropisiLight2", sans-serif;
   padding-top: 60px;
   font-size: 44px;
   max-width: 645px;
@@ -561,6 +566,7 @@ body {
   font-size: 100px;
 }
 .reading__participants_desc {
+  font-family: "PropisiLight2", sans-serif;
   text-align: justify;
   font-size: 50px;
   text-indent: 2%;
@@ -709,6 +715,7 @@ body {
   margin-bottom: 13px;
 }
 .reading__reviews_text {
+  font-family: "PropisiLight2", sans-serif;
   font-size: 35px;
   max-width: 397px;
   text-indent: 5%;
@@ -744,6 +751,7 @@ body {
   max-width: 594px;
 }
 .reading__reviews_quote {
+  font-family: "PropisiLight2", sans-serif;
   font-size: 44px;
   text-align: justify;
   max-width: 594px;
@@ -751,6 +759,7 @@ body {
   margin-top: 17px;
 }
 .reading__reviews_quote-autor {
+  font-family: "PropisiLight2", sans-serif;
   display: flex;
   align-self: flex-end;
   font-size: 48px;
@@ -1598,6 +1607,12 @@ body {
   }
 }
 @media only screen and (max-width: 580px) {
+  .f-link__menu:not(:first-child){
+    margin-left: 15px;
+  }
+  .f-menu {
+    gap: unset;
+  }
   .reading__reviews_left .reading__reviews {
     justify-content: space-around;
   }
@@ -2045,9 +2060,6 @@ body {
   }
   .cases__swiper_wrap {
     max-width: 300px;
-  }
-  .f-menu {
-    gap: 15px;
   }
   .nav {
     padding: 11px 15px;
