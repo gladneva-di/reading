@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Propisi";
   src: url("../fonts/propisi-cyr-lat.woff2") format("woff2"),
-    url("../fonts/propisi-cyr-lat.woff") format("woff");
+    url("../fonts/propisi-cyr-lat.woff") format("woff"), url("../fonts/Propisi_Cyr_Lat_2.ttf") format("opentype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -9,7 +9,7 @@
 @font-face {
   font-family: "Propisi";
   src: url("../fonts/propisi-cyr-lat-light.woff2") format("woff2"),
-    url("../fonts/propisi-cyr-lat-light.woff") format("woff");
+    url("../fonts/propisi-cyr-lat-light.woff") format("woff"), url("../fonts/Propisi_Cyr_Lat_2.ttf") format("opentype");
   font-weight: 300;
   font-style: normal;
   font-display: swap;

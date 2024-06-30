@@ -2,6 +2,7 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const webpack = require("webpack");
+const autoprefixer = require("autoprefixer");
 
 module.exports = {
   entry: {
@@ -26,7 +27,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: "webpack Boilerplate",
       template: path.resolve(__dirname, "./src/index.html"),
-      filename: "index.html"
+      filename: "index.html",
     }),
     new CleanWebpackPlugin(),
     new webpack.HotModuleReplacementPlugin(),
@@ -51,19 +52,38 @@ module.exports = {
         test: /\.(?:ico|gif|svg|png|jpg|jpeg)$/i,
         type: "asset/resource",
         generator: {
-          filename: 'images/[name][ext]'
-        }
+          filename: "images/[name][ext]",
+        },
       },
       {
         test: /\.(woff(2)?|eot|ttf|otf|)$/,
         type: "asset/resource",
         generator: {
-          filename: 'fonts/[name][ext]'
-        }
+          filename: "fonts/[name][ext]",
+        },
       },
       {
         test: /\.(scss|css)$/,
-        use: ["style-loader", "css-loader", "sass-loader"],
+        use: [
+          "style-loader",
+          "css-loader",
+          {
+            loader: "postcss-loader",
+            options: {
+              postcssOptions: {
+                plugins: [
+                  [
+                    "autoprefixer",
+                    {
+                      // Options
+                    },
+                  ],
+                ],
+              },
+            },
+          },
+          "sass-loader",
+        ],
       },
     ],
   },
