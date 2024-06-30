@@ -68,6 +68,9 @@ body {
 .f-link__menu:first-child {
   margin-right: -24px;
 }
+.f-link__menu:not(:first-child) {
+  margin-left: 51px;
+}
 .header {
   margin: 0 auto;
   width: 100%;
@@ -641,13 +644,19 @@ body {
   position: relative;
   display: flex;
   align-items: flex-start;
-  column-gap: 33px;
+  // column-gap: 33px;
 }
 .reading__reviews_vector {
   display: none;
 }
 .reading__reviews_left .reading__reviews {
   padding-left: 52px;
+}
+.reading__reviews_text1, .reading__reviews_text2 {
+  margin-left: 33px;
+}
+.reading__reviews_text3 {
+  margin-right: 33px;
 }
 .reading__reviews_right .reading__reviews_top {
   padding-left: 88px;
@@ -829,7 +838,7 @@ body {
 }
 .f-menu {
   display: flex;
-  gap: 51px;
+  gap: unset;
 }
 .f-link__menu {
   display: flex;
@@ -1488,7 +1497,13 @@ body {
     padding-left: 0;
   }
   .reading__reviews {
-    column-gap: 24px;
+    column-gap: 0;
+  }
+  .reading__reviews_text1, .reading__reviews_text2 {
+    margin-left: 24px;
+  }
+  .reading__reviews_text3 {
+    margin-right: 24px;
   }
   .reading__reviews_right .reading__reviews {
     column-gap: 12px;
@@ -1526,10 +1541,19 @@ body {
   }
   .f-menu,
   .reading__nav {
-    gap: 20px;
+    gap: unset;
+  }
+  .f-link__menu:not(:first-child){
+    margin-left: 20px;
+  }
+  .f-menu-bottom {
+    margin-left: 20px;
   }
 }
 @media only screen and (max-width: 760px) {
+  .f-menu-bottom {
+    margin-left: 0;
+  }
   .reading__reviews_quote {
     font-size: 2vw;
     max-width: 208px;
@@ -1555,7 +1579,13 @@ body {
     padding: 31px 0 32px 11px;
   }
   .reading__reviews {
-    column-gap: 14px;
+    column-gap: 0;
+  }
+  .reading__reviews_text1, .reading__reviews_text2 {
+    margin-left: 14px;
+  }
+  .reading__reviews_text3 {
+    margin-right: 14px;
   }
   .reading__reviews_left .reading__reviews_text {
     min-width: unset;
@@ -1808,10 +1838,15 @@ body {
     position: absolute;
     left: 28px;
     top: 225px;
+    column-gap: unset;
   }
 
   .reading__reviews_text3 {
     padding-top: 3px;
+    margin-right: 7px;
+  }
+  .reading__reviews_text1 {
+    margin-left: 7px;
   }
   .reading__reviews_text-box-mob {
     display: block;
@@ -1893,7 +1928,7 @@ body {
     margin: 0;
   }
   .reading__reviews {
-    column-gap: 9px;
+    column-gap: unset;
   }
 
   .reading__reviews_wrap {
