@@ -3,6 +3,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const webpack = require("webpack");
 const autoprefixer = require("autoprefixer");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
   entry: {
@@ -31,6 +32,9 @@ module.exports = {
     }),
     new CleanWebpackPlugin(),
     new webpack.HotModuleReplacementPlugin(),
+    new MiniCssExtractPlugin({
+      filename: "[name].style.css",
+    })
   ],
   resolve: {
     alias: {
@@ -45,6 +49,11 @@ module.exports = {
       },
       {
         test: /\.js$/,
+        exclude: /node_modules/,
+        use: ["babel-loader"],
+      },
+      {
+        test: /\.css$/,
         exclude: /node_modules/,
         use: ["babel-loader"],
       },
@@ -65,7 +74,7 @@ module.exports = {
       {
         test: /\.(scss|css)$/,
         use: [
-          "style-loader",
+          MiniCssExtractPlugin.loader,
           "css-loader",
           {
             loader: "postcss-loader",
