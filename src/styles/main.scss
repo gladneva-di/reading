@@ -18,14 +18,6 @@
   font-family: "PropisiLight2";
   src: url("../fonts/Propisi_Cyr_Lat_2.ttf") format("opentype");
 }
-
-@font-face {
-  font-family: "NokiaSans";
-  src: url("../fonts/NokiaSansS60.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
 @font-face {
   font-family: "Maler";
   src: url("../fonts/MalerRegular.woff2") format("woff2"),
@@ -832,7 +824,7 @@ body {
   top: -4px;
 }
 .header_right span {
-  font-family: "NokiaSans", sans-serif;
+  font-family: "Maler", sans-serif;
   text-transform: uppercase;
   font-size: 60px;
   line-height: 100%;
