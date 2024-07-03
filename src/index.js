@@ -1,6 +1,25 @@
 import "./styles/main.scss";
 import "./swiper-bundle.min.js";
 import "./swiper-bundle.min.css";
+import {PageFlip} from 'page-flip';
+
+const pageFlip = new PageFlip(document.getElementById('book'),
+    {
+        width: 150, // required parameter - base page width
+        height: 157,  // required parameter - base page height
+        size: "stretch",
+        // showCover: true
+        minWidth: 150,
+        maxWidth: 750,
+        minHeight: 420,
+        maxHeight: 150,
+        // size: "stretch",
+        drawShadow: false,
+        usePortrait: false,
+    }
+);
+
+pageFlip.loadFromHTML(document.querySelectorAll('.my-page'));
 
 // swiper
 
@@ -12,8 +31,8 @@ var Swipes = new Swiper(".cases__swiper", {
   },
 
   pagination: {
-    // el: ".swiper-pagination",
-    // clickable: true,
+    el: ".swiper-pagination",
+    clickable: true,
   },
   breakpoints: {
     // when window width is <= 320px
