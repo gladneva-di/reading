@@ -3,23 +3,23 @@ import "./swiper-bundle.min.js";
 import "./swiper-bundle.min.css";
 import {PageFlip} from 'page-flip';
 
-const pageFlip = new PageFlip(document.getElementById('book'),
-    {
-        width: 150, // required parameter - base page width
-        height: 157,  // required parameter - base page height
-        size: "stretch",
-        // showCover: true
-        minWidth: 150,
-        maxWidth: 750,
-        minHeight: 420,
-        maxHeight: 150,
-        // size: "stretch",
-        drawShadow: false,
-        usePortrait: false,
-    }
-);
+// const pageFlip = new PageFlip(document.getElementById('book'),
+//     {
+//         width: 150, // required parameter - base page width
+//         height: 157,  // required parameter - base page height
+//         size: "stretch",
+//         // showCover: true
+//         minWidth: 150,
+//         maxWidth: 730,
+//         minHeight: 157,
+//         maxHeight: 755,
+//         // size: "stretch",
+//         drawShadow: false,
+//         usePortrait: false,
+//     }
+// );
 
-pageFlip.loadFromHTML(document.querySelectorAll('.my-page'));
+// pageFlip.loadFromHTML(document.querySelectorAll('.my-page'));
 
 // swiper
 
@@ -60,3 +60,14 @@ var Swipes = new Swiper(".cases__swiper", {
     },
   },
 });
+
+// const pages = document.querySelectorAll(".pageNum");
+
+// pages.forEach((element) => element.addEventListener("click", () => {
+//   console.log(element.getAttribute("page"));
+//   console.log(Number(element.getAttribute("page")));
+//   pageFlip.turnToPage(Number(element.getAttribute("page")));
+// }));
+// document.addEventListener('click', () => {
+//   console.log(pageFlip.getCurrentPageIndex());
+// })
