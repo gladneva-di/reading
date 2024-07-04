@@ -888,7 +888,12 @@ body {
 .cases__swiper_wrap {
   max-width: 1500px;
 }
-
+.pageNum {
+  cursor: pointer;
+}
+.pageNum:hover {
+  opacity: 0.8;
+}
 .page__box {
   display: flex;
 }
@@ -896,7 +901,7 @@ body {
   width: 100%;
 }
 .stf__parent {
-  margin: 50px auto 0;
+  margin: 0 auto;
 }
 .page {
   padding: 20px;
@@ -987,8 +992,10 @@ body {
 // .pagination__box6 {
 //   margin-bottom: 29px;
 // }
-.pagination__box img {
+.pagination__box {
   margin-bottom: 11px;
+}
+.pagination__box img {
   width: 75px;
 }
 .pagination__box2 img {
@@ -1011,6 +1018,9 @@ body {
 }
 .list__left p, .list__left h2 {
   line-height: 100%;
+}
+.container {
+  padding: 139px 0;
 }
 @media only screen and (max-width: 1850px) {
   .container {
@@ -1212,15 +1222,6 @@ body {
   .swiper-pagination-bullet {
     height: 58px !important;
   }
-}
-@media only screen and (max-width: 1300px) {
-  .reading__reviews_quote-wrap {
-    margin-right: -200px;
-  }
-  .reading__diary_icon-pointer {
-    max-width: 493px;
-    top: 311px;
-  }
   .pagination__box {
     margin-left: 60px;
   }
@@ -1231,11 +1232,20 @@ body {
   .list__left {
     font-size: 29px;
   }
+
+}
+@media only screen and (max-width: 1300px) {
+  .reading__reviews_quote-wrap {
+    margin-right: -200px;
+  }
+  .reading__diary_icon-pointer {
+    max-width: 493px;
+    top: 311px;
+  }
 }
 @media only screen and (max-width: 1200px) {
   .container {
-    padding-right: 50px;
-    padding-left: 50px;
+      padding: 60px 50px;
   }
   .nav {
     padding: 37px 38px 23px 45px;
@@ -1766,26 +1776,23 @@ body {
   }
 }
 @media (max-width: 992px) {
-  .book__container {
+  .container {
     max-width: 960px;
   }
   .list__left {
     font-size: 20px;
   }
   .pagination__icon_box {
-    width: 40px;
-    height: 40px;
+    width: 21px;
+    height: 28px;
   }
   .list__left h2 {
     margin-top: 0;
     margin-bottom: 0;
     margin-left: 42px;
   }
-  .pagination__box {
+  .pagination__box p {
     margin-left: 20px;
-  }
-  .pagination__box1 {
-    margin-bottom: 10px;
   }
   .pagination__box img {
     max-width: 20px;
@@ -1793,12 +1800,8 @@ body {
 
 }
 @media (max-width: 768px) {
-  .book__container {
+  .container {
     max-width: 720px;
-  }
-  .pagination__icon_box {
-    width: 15px;
-    height: 16px;
   }
   .list__left {
     font-size: 13px;
@@ -2411,6 +2414,29 @@ body {
   .swiper-pagination-bullets.swiper-pagination-horizontal {
     top: 42px !important;
   }
+  .pagination__box {
+    margin-left: 30px;
+  }
+  .container {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .pagination__box {
+    margin-bottom: 4px;
+  }
+  
+  .list__left {
+    font-size: 8px;
+  }
+  .list__left h2 {
+    font-size: 15px;
+    margin-bottom: 8px;
+  }
+  .pagination__icon_box {
+    width: 15px;
+    height: 16px;
+  }
+
 }
 @media only screen and (max-width: 460px) {
   .reading__nav {
@@ -2419,9 +2445,13 @@ body {
   .f-menu-bottom {
     margin-left: 0;
   }
+
 }
 
 @media only screen and (max-width: 420px) {
+  .container {
+    padding: 14px 0 24px;
+  }
   .reading__tablet_img {
     max-width: 327px;
   }
@@ -2447,17 +2477,6 @@ body {
   .stickers__item {
     position: absolute;
   }
-  .container {
-    padding-right: 20px;
-    padding-left: 20px;
-  }
-  .list__left {
-    font-size: 8px;
-  }
-  .list__left h2 {
-    font-size: 15px;
-  }
-
 }
 @media only screen and (max-width: 350px) {
   .reading__tablet_img {
