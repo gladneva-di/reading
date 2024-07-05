@@ -2297,11 +2297,14 @@ body {
   .reading__block_fourth {
     position: relative;
   }
-  .container {
-    max-width: 300px;
-    padding-right: 30px;
-    padding-left: 30px;
-  }  
+  .pagination__icon_box {
+    width: 14px;
+    height: 14px;
+  }
+  .list__left {
+    font-size: 11px;
+  }
+
 }
 @media only screen and (max-width: 460px) {
   .reading__nav {
@@ -2310,9 +2313,6 @@ body {
   .f-menu-bottom {
     margin-left: 0;
   }
-  .list__left {
-    font-size: 11px;
-  }
   .list__left h2 {
     font-size: 15px;
     margin-bottom: 8px;
@@ -2320,10 +2320,6 @@ body {
   .pagination__box {
     margin-left: 20px;
     margin-bottom: 4px;
-  }
-  .pagination__icon_box {
-    width: 16px;
-    height: 16px;
   }
   .list__left h2 {
     margin-left: 20px;
@@ -2334,6 +2330,7 @@ body {
 
 @media only screen and (max-width: 420px) {
   .container {
+    max-width: 300px;
     padding: 14px 0 24px;
   }
   .reading__tablet_img {
@@ -2368,10 +2365,6 @@ body {
   .pagination__box {
     margin-left: 20px;
     margin-bottom: 4px;
-  }
-  .pagination__icon_box {
-    width: 14px;
-    height: 14px;
   }
   .list__left h2 {
     margin-left: 20px;
