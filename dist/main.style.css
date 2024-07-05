@@ -837,37 +837,15 @@ body {
 .pageNum:hover {
   opacity: 0.8; }
 
-.page__box {
-  display: flex; }
-
 .my-page img {
   width: 100%; }
 
 .stf__parent {
   margin: 0 auto; }
 
-.page {
-  padding: 20px; }
-
-.pag_desctop {
-  width: 30%;
-  position: absolute;
-  top: 83px !important;
-  left: 207px !important;
-  display: flex;
-  flex-direction: column; }
-
-.pag_desctop span {
-  width: 100% !important;
-  height: 80px !important;
-  border-radius: 0 !important;
-  margin-bottom: 12px !important; }
-
 .list__left {
   position: absolute;
-  top: 0; }
-
-.list__left {
+  top: 0;
   color: #11114c;
   font-size: 40px;
   line-height: 40px; }
@@ -1906,13 +1884,11 @@ body {
     flex-direction: column; }
   .f-menu-bottom {
     margin-left: 0; }
-  .list__left h2 {
-    font-size: 15px;
-    margin-bottom: 8px; }
   .pagination__box {
     margin-left: 20px;
     margin-bottom: 4px; }
   .list__left h2 {
+    margin-bottom: 8px;
     margin-left: 20px;
     font-size: 13px; } }
 
@@ -1937,9 +1913,6 @@ body {
     left: 140px; }
   .list__left {
     font-size: 8px; }
-  .list__left h2 {
-    font-size: 15px;
-    margin-bottom: 8px; }
   .pagination__box {
     margin-left: 20px;
     margin-bottom: 4px; }
