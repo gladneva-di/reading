@@ -892,9 +892,6 @@ body {
 .page__box {
   display: flex;
 }
-.my-page img {
-  width: 100%;
-}
 .stf__parent {
   margin: 50px auto 0;
 }
@@ -939,88 +936,7 @@ body {
   border-radius: 0 !important;
   margin-bottom: 12px !important;
 }
-.list__left {
-  // background: url('../images/list__left.png');
-  // background-size: 100%;
-  // background-repeat: no-repeat;
-}
-.list__left {
-  position: absolute;
-  top: 0;
-}
-.list__left {
-  color: #11114c;
-  font-size: 40px;
-  line-height: 40px;
-}
-.list__left h2 {
-  font-weight: 400;
-  margin-top: 60px;
-  margin-left: 89px;
-  margin-bottom: 41px;
-}
-.pagination__icon_box {
-  width: 75px;
-  display: flex;
-  justify-content: center;
-}
-.pagination__box {
-  display: flex;
-  align-items: center;
-  margin-left: 105px;
-}
-// .pagination__box1 {
-//   margin-bottom: 14px;
-// }
-// .pagination__box2 {
-//   margin-bottom: 7px;
-// }
-// .pagination__box3 {
-//   margin-bottom: 24px;
-// }
-// .pagination__box4 {
-//   margin-bottom: 17px;
-// }
-// .pagination__box5 {
-//   margin-bottom: 11px;
-// }
-// .pagination__box6 {
-//   margin-bottom: 29px;
-// }
-.pagination__box img {
-  margin-bottom: 11px;
-  width: 75px;
-}
-.pagination__box2 img {
-  max-width: 47px;
-}
-.pagination__box3 img {
-  max-width: 60px;
-}
-.pagination__box4 img {
-  max-width: 60px;
-}
-.pagination__box5 img {
-  max-width: 48px;
-}
-.pagination__box6 img {
-  max-width: 70px;
-}
-.pagination__box p {
-  margin-left: 30px;
-}
-.list__left p, .list__left h2 {
-  line-height: 100%;
-}
 @media only screen and (max-width: 1850px) {
-  .container {
-    width: 100%;
-    padding-right: 90px;
-      padding-left: 90px;
-      margin-right: auto;
-      margin-left: auto;
-  }
-  
   .f-link__menu:first-child {
     margin-right: unset;
   }
@@ -1101,19 +1017,6 @@ body {
 }
 
 @media only screen and (max-width: 1500px) {
-    // слайдер
-    .list__left {
-      font-size: 3vw;
-    }
-    .list__left h2 {
-      margin-top: 30px;
-      margin-bottom: 21px;
-    }
-    .pagination__icon_box {
-      width: 60px;
-      height: 60px;
-    }
-  
   .reading__block_fifth {
     padding: 0 20px;
   }
@@ -1221,22 +1124,8 @@ body {
     max-width: 493px;
     top: 311px;
   }
-  .pagination__box {
-    margin-left: 60px;
-  }
-  .list__left h2 {
-    margin-top: 10px;
-    margin-bottom: 11px;
-  }
-  .list__left {
-    font-size: 29px;
-  }
 }
 @media only screen and (max-width: 1200px) {
-  .container {
-    padding-right: 50px;
-    padding-left: 50px;
-  }
   .nav {
     padding: 37px 38px 23px 45px;
   }
@@ -1763,48 +1652,6 @@ body {
   }
   .swiper-pagination-bullet {
     height: 27px !important;
-  }
-}
-@media (max-width: 992px) {
-  .book__container {
-    max-width: 960px;
-  }
-  .list__left {
-    font-size: 20px;
-  }
-  .pagination__icon_box {
-    width: 40px;
-    height: 40px;
-  }
-  .list__left h2 {
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: 42px;
-  }
-  .pagination__box {
-    margin-left: 20px;
-  }
-  .pagination__box1 {
-    margin-bottom: 10px;
-  }
-  .pagination__box img {
-    max-width: 20px;
-  }
-
-}
-@media (max-width: 768px) {
-  .book__container {
-    max-width: 720px;
-  }
-  .pagination__icon_box {
-    width: 15px;
-    height: 16px;
-  }
-  .list__left {
-    font-size: 13px;
-  }
-  .pagination__box p {
-    margin-left: 10px;
   }
 }
 
@@ -2451,13 +2298,6 @@ body {
     padding-right: 20px;
     padding-left: 20px;
   }
-  .list__left {
-    font-size: 8px;
-  }
-  .list__left h2 {
-    font-size: 15px;
-  }
-
 }
 @media only screen and (max-width: 350px) {
   .reading__tablet_img {
@@ -2503,10 +2343,5 @@ body {
   .header_right img {
     width: 136px;
   }
-  .container {
-    padding-right: 10px;
-    padding-left: 10px;
-  }
-
 }
 
